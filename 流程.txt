@@ -1,0 +1,11 @@
+创建虚拟环境
+python -m venv venv
+进入虚拟环境
+venv\Scripts\activate
+
+安装依赖
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ -r requirements.txt
+
+现在可以运行了
+python run_tests.py
+或者用pycharm/vscode运行。右键根目录在pycahrm打开，pycharm然后直接运行run_tests.py。
