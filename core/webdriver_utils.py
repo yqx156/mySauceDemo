@@ -41,7 +41,7 @@ class WebDriverManager:
                 options.add_argument(option)
             
             service = Service(executable_path=EDGE_DRIVER_PATH)
-            driver = webdriver.Edge(service=service, options=options)
+            driver = webdriver.Edge(service=service, options=options) if EDGE_DRIVER_PATH else webdriver.Edge(options=options)
             driver.implicitly_wait(IMPLICIT_WAIT_TIME)
             driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
             
