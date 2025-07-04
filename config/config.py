@@ -23,7 +23,7 @@ POSTAL_CODE = '123456'
 SORT_OPTIONS = ["az", "za", "lohi", "hilo"]
 
 # ========== WebDriver配置 ==========
-EDGE_DRIVER_PATH = ''
+EDGE_DRIVER_PATH = 'msedgedriver.exe'
 
 # 浏览器选项
 BROWSER_OPTIONS = [
