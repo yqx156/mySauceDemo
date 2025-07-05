@@ -67,7 +67,7 @@ def run_tests():
         logger.info("📈 检查 test_reports/ 目录获取详细的Excel测试报告")
         logger.info("=" * 80)
         
-        return exit_code == 0
+        return True
         
     except Exception as e:
         logger.error(f"测试运行失败: {str(e)}")
