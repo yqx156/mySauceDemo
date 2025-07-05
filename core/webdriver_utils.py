@@ -32,7 +32,7 @@ class WebDriverManager:
             service = Service(EDGE_DRIVER_PATH)
             
             # 创建WebDriver
-            driver = webdriver.Edge(service=service, options=options)
+            driver = webdriver.Edge(service=service, options=options) if EDGE_DRIVER_PATH else webdriver.Edge(options=options)
             
             # 设置超时
             driver.implicitly_wait(IMPLICIT_WAIT_TIME)
