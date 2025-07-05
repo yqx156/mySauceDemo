@@ -1,0 +1,17 @@
+初始化
+git init
+
+连接到仓库
+git remote set-url origin (这里换成你自己的仓库地址)https://github.com/WeeZHnMin/sauceDemo.git
+
+添加本地项目
+git add .
+
+提交
+git commit -m "none"
+
+连接到主分支
+git branch -m main
+
+强制提交代码(确保代理开着)
+git push -f origin main
